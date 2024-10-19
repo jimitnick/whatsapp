@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Gilroy-Regular";
+    background-color: #222;
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+#main #one{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 5%;
+    background-color: #222;
+}
+#main #two #search{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#main #two #search input{
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+    font-family: "Gilroy-Regular";
+    background-color: #111;
+    font-size: 1.2vw;
+    color: #fff;
+    padding-inline-start: 12px;
+}
+
+#main #two{
+    height: 100%;
+    width: 30%;
+    background-color: #111;
+    border-right:1px solid #4e4e4e;
+}
+#main #three{
+    height: 100%;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    position: relative;
+}
+#main #three h2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 3vw;
+    color: #959595;
+}
+#main #three h6{
+    color: #959595;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 1.1vw;
+}
+#main #three h6 span{
+    color: #05A884;
+}
+#main #three i{
+    gap: 10px;
+    padding: 4px 0px;
+}
+.ri-whatsapp-line{
+    color: #959595;
+    font-size: 9vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 500;
+}
+#one #btmicons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+#one #btmicons #btmiconstop i{
+    gap: 20px;
+    float: left;
+}
+#one #btmicons #btmiconsbtm i{
+    margin-top: 95%;
+    display: flex;
+    gap: 20px;
+    float: bottom;
+}
+#main #one i{
+    padding: 10px 0px;
+    margin: 3pxpx;
+    /* margin-left: 10px;
+    margin-right: 20px; */
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    width: 95%;
+    color: #959595;
+    gap: 20px;
+    cursor: pointer;
+    display: flex;
+}
+#main #one i:hover{
+    background-color: #494949;
+    border-radius: 4px;
+}
+#main #one hr{
+    color:#959595;
+}
+#top{
+    display: flex;
+    flex-direction: column;
+}
+#top #chaticons{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+}
+#top #chaticons h4{
+    font-weight: 900;
+    font-size: 1.5  vw;
+}
+#top #chaticons #icons{
+    display: flex;
+    gap: 20px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+#two #btm{
+    width: 100%;
+    height: calc(100% - 10px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+#two #btm #people{
+    padding: 10px;
+    border-radius: 3px;
+    width: 95%;
+    height: 10%;
+    background-color: #222;
+}
+#two #btm #people:hover{
+    background-color: #494949;
+    
+}
+#two #btm #people h3{
+    color: #fff;
+    font-size: 1.2vw;
+
+}
+#three #userProfile{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#three #userProfile .user{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    display: none;
+    transition: display ease-in-out 0.3s;
+}
