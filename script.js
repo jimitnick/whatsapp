@@ -30,3 +30,7 @@ ppl.forEach(function(elem){
         }
     })
 })
+
+document.querySelector("#searchbar").addEventListener('input',()=>{
+    
+})
